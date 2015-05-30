@@ -322,7 +322,7 @@ public class DisplayClustering extends Frame {
         writer.append(new Text("sample_"  + i++), vw);
       }
     } finally {
-      Closeables.closeQuietly(writer);
+    //  Closeables.closeQuietly(writer);
     }
   }
 
@@ -396,7 +396,7 @@ public class DisplayClustering extends Frame {
       reader.next(key, classifierOut);
       return classifierOut;
     } finally {
-      Closeables.closeQuietly(reader);
+   //   Closeables.closeQuietly(reader);
     }
   }
 
@@ -408,7 +408,7 @@ public class DisplayClustering extends Frame {
       Writable key = new Text("test");
       writer.append(key, classifier);
     } finally {
-      Closeables.closeQuietly(writer);
+   //   Closeables.closeQuietly(writer);
     }
   }
 }
