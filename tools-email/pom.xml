@@ -25,6 +25,11 @@
 		</dependency>
 		<!-- from parent -->
 		<dependency>
+		  <groupId>${project.groupId}</groupId>
+		  <artifactId>tools-common</artifactId>
+		  <version>${project.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging</artifactId>
 		</dependency>
